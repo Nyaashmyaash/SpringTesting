@@ -20,6 +20,8 @@ public class UniversityLoggingAspect {
     @AfterReturning(pointcut = "execution(* getStudents())", returning = "students")
     public void afterReturningGetStudentsLoggingAdvice(List<Student> students){
 
+        //-------------------------------
+        //замена результата таргет метода
         Student firstStudent = students.get(0);
         String nameSurname = firstStudent.getNameSurname();
         nameSurname = "Mr." + nameSurname;
@@ -28,7 +30,7 @@ public class UniversityLoggingAspect {
         double avgGrade = firstStudent.getAvgGrade();
         avgGrade = avgGrade + 1;
         firstStudent.setAvgGrade(avgGrade);
-        
+
         System.out.println("afterReturningGetStudentsLoggingAdvice: after getStudents method -  Students list log");
     }
 
