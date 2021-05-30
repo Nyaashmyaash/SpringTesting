@@ -2,7 +2,7 @@ package com.nyash.aop;
 
 import org.springframework.stereotype.Component;
 
-@Component("uniLibraryBean")
+@Component
 public class UniLibrary extends AbstractLibrary{
 
 
@@ -11,9 +11,9 @@ public class UniLibrary extends AbstractLibrary{
         System.out.println("------------------------------------");
     }
 
-    public void returnBook(){
+    public String returnBook(){
         System.out.println("Book returned to Uni library");
-        System.out.println("------------------------------------");
+        return "War and Piece";
     }
 
     public void getMagazine(){
