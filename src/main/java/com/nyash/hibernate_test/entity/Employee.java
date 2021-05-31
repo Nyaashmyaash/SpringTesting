@@ -8,8 +8,8 @@ import javax.persistence.*;
 public class Employee {
 
     @Id
-    @Column
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column
     private Integer id;
 
     @Column(name = "name")
