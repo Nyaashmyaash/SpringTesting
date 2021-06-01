@@ -1,4 +1,4 @@
-package com.nyash.hibernate_test2.entity;
+package com.nyash.hibernate_one_to_one.entity;
 
 
 import javax.persistence.*;
