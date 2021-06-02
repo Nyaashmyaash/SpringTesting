@@ -22,6 +22,7 @@ public class Test1 {
             System.out.println("DONE");
         } finally {
             sessionFactory.close();
+
         }
     }
 }
